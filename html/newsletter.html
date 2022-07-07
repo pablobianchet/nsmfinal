@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="keywords" content="NSM, indumentaria, ropa, ropa femenina, moda, ropa de mujer">
-        <META name="description" content="Indumentaria femenina">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="NSM, indumentaria, ropa, ropa femenina, moda, ropa de mujer">
+    <META name="description" content="Indumentaria femenina">
     <title>NSM NEWSLETTER</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -70,7 +70,11 @@
             </nav>
         </div>
 
-        <div class="container-fluid">
+
+
+
+
+        <div class="container-fluid" id="carruselnews">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -111,68 +115,95 @@
                 </button>
             </div>
 
+
+            <br>
             <div class="container-fluid">
-                <br>
+                <div class="map-responsive" id="mapa">
 
-                <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-4">
-                        <label for="validationCustom01" class="form-label">NOMBRE</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="PABLO" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <label for="validationCustom02" class="form-label">APELLIDO</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="BIANCHET" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13156.937320027158!2d-58.50254084763087!3d-34.47157928085636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb03327abb9e1%3A0x418e505f5d22c846!2sCatedral%20de%20San%20Isidro!5e0!3m2!1ses-419!2sar!4v1656740927137!5m2!1ses-419!2sar"
+                        width="932" height="606" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <div class="col-md-6">
-                        <label for="validationCustom03" class="form-label">CIUDAD</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="validationCustom04" class="form-label">PROVINCIA</label>
-                        <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid state.
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">NUNCA COMPARTIREMOS TUS DATOS Y PUEDES DARTE DE BAJA CUANO
-                            LO DESEES (*)</div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                ACEPTAR TERMINOS Y SUSCRIBIRME AL NEWSLETTER (*)
-                            </label>
-                            <div class="invalid-feedback">
-                                DEBES ACEPTAR LOS TERMINOS !
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">ENVIAR FORMULARIO</button>
-                    </div>
-                </form>
+                </div>
 
             </div>
+        </div>
+        <br>
 
+
+        <!-- COMEINZA EL FORMULARIO DE CONTACTO -->
+
+
+        <div class="container-fluid">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">NOMBRE</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="PABLO" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">APELLIDO</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="BIANCHET" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">CIUDAD</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option value="">SAN ISIDRO</option>
+                        <option value="">MARTINEZ</option>
+                        <option value="">VICENTE LOPEZ</option>
+                        <option value="">BRAGADO</option>
+                        <option value="">CASARES</option>
+                        <option value="">9 DE JULIO</option>
+                        <option value="">ROSARIO</option>
+                        <option value="">ITUZAINGO</option>
+                        <option value="">ACASUSSO</option>
+                        <option value="">OLIVOS</option>
+                        </option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="disabledSelect" class="form-label">PROVINCIA</label>
+                    <select id="disabledSelect" class="form-select">
+                        <option value="">BUENOS AIRES</option>
+                        <option value="">CORDOBA</option>
+                        <option value="">SANTA FE</option>
+                        <option value="">SALTA</option>
+                        <option value="">TUCUMAN</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">CORREO ELECTRONICO</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">NUNCA COMPARTIREMOS TUS DATOS Y PUEDES DARTE DE BAJA CUANO
+                        LO DESEES (*)</div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            ACEPTAR TERMINOS Y SUSCRIBIRME AL NEWSLETTER (*)
+                        </label>
+                        <div class="invalid-feedback">
+                            DEBES ACEPTAR LOS TERMINOS !
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">ENVIAR FORMULARIO</button>
+                </div>
+            </form>
+
+        </div>
+        <div></div>
 
     </main>
 
