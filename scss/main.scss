@@ -11,9 +11,10 @@
     background-image: url(https://www.xtrafondos.com/descargar.php?id=4625&resolucion=2560x1440);
     background-repeat: no-repeat;
 }
+#contenedorbotonfeo{margin-top: 1%; margin-bottom: 1%;}
 
 .h1marca {
-    font-size: 750%;
+    font-size: 50px;
     text-align: center;
     font-style: italic;
     color: black;
@@ -22,6 +23,7 @@
     text-shadow: 0 0 0 whitesmoke;
     animation: smoky-mirror 4s 1s both reverse;
     animation-fill-mode: forwards;
+    font-style: normal;
 }
 
 
@@ -60,6 +62,7 @@
 }
 
 
+
 .marcalink {
     text-decoration: none;
 }
@@ -67,7 +70,7 @@
 /* aca comineza el estilo del main */
 
 .texto {
-    size: 60%;
+    size: 50%;
     color: white;
     font-style: oblique;
     font-family: Arial, Helvetica, sans-serif;
@@ -105,7 +108,7 @@ body {
 }
 
 body {
-    background: #b3b3bc;
+    background: white;
     font-family: Arial;
 }
 
@@ -173,7 +176,7 @@ svg {
     background-repeat: no-repeat;
     position: relative;
     background-image: url(https://www.wallpapertip.com/wmimgs/57-576166_download-black-grunge-background-src-download-black-grunge.jpg);
-    margin-top: 2%;
+    margin-top: 0,5%;
     font-size: small;
 }
 
@@ -199,7 +202,7 @@ h5 {
 
 .btn-primary {
     float: left;
-    color: rgb(138, 15, 15);
+    color: rgb(84, 83, 83);
     background-color: white;
     border-radius: 0%;
     border-style: double;
@@ -207,6 +210,7 @@ h5 {
     font-size: large;
     size: 10%;
     margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .botoninstagram {
@@ -253,6 +257,7 @@ h5 {
     font-style: oblique;
     font-size: xx-large;
     background-color: white;
+    margin-top: 1%;margin-bottom: 1%;
 }
 
 .btnagregar {
@@ -282,15 +287,15 @@ h5 {
 
 
     color: #fff;
-    background-color: #dc3545;
+    background-color: #c9c9c9;
     border-color: #dc3545;
 
 }
 
 .btnborrar:hover {
     color: #fff;
-    background: #bb2d3b;
-    border-color: #b02a37;
+    background: #252424;
+    border-color: #ffffff;
 
 }
 
@@ -304,8 +309,8 @@ h5 {
 
 .btnborrar:active {
     color: #fff;
-    background: #b02a37;
-    border-color: #a52834;
+    background: #ffffff;
+    border-color: #010000;
     shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 
 }
@@ -313,7 +318,7 @@ h5 {
 .btnborrar:disabled {
     color: #fff;
     background: #dc3545;
-    border-color: #dc3545;
+    border-color: #f1f4ee;
 
 }
 
@@ -380,6 +385,8 @@ p {
     transition: all 0.35s;
 }
 
+.img-fluid{margin-top: 0.5%; margin-bottom: 0.5%; text-align: center;}
+
 .nav-link {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-style: oblique;
@@ -434,6 +441,8 @@ p {
 
 @import './secciones/footer.scss';
 @import './secciones/header.scss';
+@import './secciones/botones.scss';
+@import './secciones/mapa.scss';
 
 // extend y mixin, en este caso permite asignar un estilo igual a todos los botones-
 //primarios, con excepcion del color de fondo, que en cada caso debera asignarsele// 
@@ -447,8 +456,12 @@ p {
 
 .btn-primary {
     @extend %btn;
-    background-color: rgb(198, 58, 58);
+    background-color: rgb(131, 134, 131);
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
+
+
 
 // ------------------------------------------------/
 
