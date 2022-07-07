@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+
+
+#contenedorbotonfeo {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+.btn-primary {
+    float: left;
+    color: rgb(84, 83, 83);
+    background-color: white;
+    border-radius: 0%;
+    border-style: double;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    size: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.botoninstagram {
+    padding-left: 0.2%;
+}
+
+.botontwitter {
+    padding-right: 1.7%;
+}
+
+.botonwap {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.accordion-button {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+    background-color: white;
+}
+
+.btn-primary {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+    background-color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.btnagregar {
+
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: large;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+
+}
+
+
+.btnborrar {
+    position: absolute;
+    right: 1%;
+    top: 3%;
+    border-style: double;
+    border-radius: 50%;
+
+
+    color: #fff;
+    background-color: #c9c9c9;
+    border-color: #dc3545;
+
+}
+
+.btnborrar:hover {
+    color: #fff;
+    background: #252424;
+    border-color: #ffffff;
+
+}
+
+.btnborrar:focus {
+    color: #fff;
+    background: #bb2d3b;
+    border-color: #b02a37;
+    box-shadow: rgb(225, 83, 97);
+
+}
+
+.btnborrar:active {
+    color: #fff;
+    background: #ffffff;
+    border-color: #010000;
+    shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+}
+
+.btnborrar:disabled {
+    color: #fff;
+    background: #dc3545;
+    border-color: #f1f4ee;
+
+}
+
+// extend y mixin, en este caso permite asignar un estilo igual a todos los botones-
+//primarios, con excepcion del color de fondo, que en cada caso debera asignarsele// 
+
+%btn {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: rgb(131, 134, 131);
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+
+
+// ------------------------------------------------/
